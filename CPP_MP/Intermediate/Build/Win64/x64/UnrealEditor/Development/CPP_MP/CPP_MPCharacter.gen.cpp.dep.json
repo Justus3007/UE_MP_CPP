@@ -1,0 +1,23 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "e:\\ue5projects\\ue_mp_cpp\\cpp_mp\\intermediate\\build\\win64\\unrealeditor\\inc\\cpp_mp\\uht\\cpp_mpcharacter.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "e:\\ue5projects\\ue_mp_cpp\\cpp_mp\\intermediate\\build\\win64\\x64\\cpp_mpeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "e:\\ue5projects\\ue_mp_cpp\\cpp_mp\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\cpp_mp\\definitions.cpp_mp.h",
+            "e:\\ue5projects\\ue_mp_cpp\\cpp_mp\\source\\cpp_mp\\cpp_mpcharacter.h",
+            "e:\\epic games\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\gameframework\\character.h",
+            "e:\\epic games\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\gameframework\\charactermovementreplication.h",
+            "e:\\epic games\\ue_5.4\\engine\\source\\runtime\\experimental\\iris\\core\\public\\iris\\serialization\\irisobjectreferencepackagemap.h",
+            "e:\\epic games\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\iriscore\\uht\\irisobjectreferencepackagemap.generated.h",
+            "e:\\epic games\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\charactermovementreplication.generated.h",
+            "e:\\epic games\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\gameframework\\rootmotionsource.h",
+            "e:\\epic games\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\rootmotionsource.generated.h",
+            "e:\\epic games\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\character.generated.h",
+            "e:\\ue5projects\\ue_mp_cpp\\cpp_mp\\intermediate\\build\\win64\\unrealeditor\\inc\\cpp_mp\\uht\\cpp_mpcharacter.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

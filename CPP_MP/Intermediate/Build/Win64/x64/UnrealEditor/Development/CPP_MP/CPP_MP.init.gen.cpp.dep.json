@@ -1,0 +1,13 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "e:\\ue5projects\\ue_mp_cpp\\cpp_mp\\intermediate\\build\\win64\\unrealeditor\\inc\\cpp_mp\\uht\\cpp_mp.init.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "e:\\ue5projects\\ue_mp_cpp\\cpp_mp\\intermediate\\build\\win64\\x64\\cpp_mpeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "e:\\ue5projects\\ue_mp_cpp\\cpp_mp\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\cpp_mp\\definitions.cpp_mp.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

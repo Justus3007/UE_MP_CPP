@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "CPP_MP",
+			"Path": "..\\Source\\CPP_MP.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "CPP_MPEditor",
+			"Path": "..\\Source\\CPP_MPEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

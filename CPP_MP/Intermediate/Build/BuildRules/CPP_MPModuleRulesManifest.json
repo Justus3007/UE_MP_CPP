@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"E:\\UE5Projects\\UE_MP_CPP\\CPP_MP\\Source\\CPP_MP\\CPP_MP.Build.cs",
+		"E:\\UE5Projects\\UE_MP_CPP\\CPP_MP\\Source\\CPP_MP.Target.cs",
+		"E:\\UE5Projects\\UE_MP_CPP\\CPP_MP\\Source\\CPP_MPEditor.Target.cs"
+	],
+	"EngineVersion": "5.4.4"
+}
