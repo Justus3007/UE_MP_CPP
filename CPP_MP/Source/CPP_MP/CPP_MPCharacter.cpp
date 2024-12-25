@@ -10,6 +10,7 @@
 #include "EnhancedInputComponent.h"
 #include "EnhancedInputSubsystems.h"
 #include "InputActionValue.h"
+#include <Game/PlayerState/MPPlayerState.h>
 
 DEFINE_LOG_CATEGORY(LogTemplateCharacter);
 
@@ -54,10 +55,38 @@ ACPP_MPCharacter::ACPP_MPCharacter()
 	// are set in the derived blueprint asset named ThirdPersonCharacter (to avoid direct content references in C++)
 }
 
+void ACPP_MPCharacter::PossessedBy(AController* NewController)
+{
+	Super::PossessedBy(NewController);
+
+	if (HasAuthority()) {
+		InitAbilityActorInfo();
+	}
+}
+
+void ACPP_MPCharacter::OnRep_PlayerState()
+{
+	Super::OnRep_PlayerState();
+	//no Authority Checks, Function runs only on client
+	InitAbilityActorInfo();
+}
+
 void ACPP_MPCharacter::BeginPlay()
 {
 	// Call the base class  
 	Super::BeginPlay();
+}
+
+void ACPP_MPCharacter::InitAbilityActorInfo()
+{
+	if (AMPPlayerState* MPPlayerState = GetPlayerState<AMPPlayerState>()) {
+		MPAbilitySystemComponent = MPPlayerState->GetMPAbilitySystemComponent();
+		MPAttributeSet = MPPlayerState->GetMPAttributeSet();
+
+		if (IsValid(MPAbilitySystemComponent)) {
+			MPAbilitySystemComponent->InitAbilityActorInfo(MPPlayerState, this);
+		}
+	}
 }
 
 //////////////////////////////////////////////////////////////////////////

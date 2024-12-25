@@ -6,6 +6,8 @@
 #include "GameFramework/Character.h"
 #include "Logging/LogMacros.h"
 #include "CPP_MPCharacter.generated.h"
+#include "AbilitySystem/MPAbilitySystemComponent.h"
+#include "AbilitySystem/Attributes/MPAttributeSet.h"
 
 class USpringArmComponent;
 class UCameraComponent;
@@ -46,6 +48,9 @@ class ACPP_MPCharacter : public ACharacter
 
 public:
 	ACPP_MPCharacter();
+
+	virtual void PossessedBy(AController* NewController) override;
+	virtual void OnRep_PlayerState() override;
 	
 
 protected:
@@ -63,6 +68,16 @@ protected:
 	
 	// To add mapping context
 	virtual void BeginPlay();
+
+private:
+	UPROPERTY(BlueprintReadOnly, meta = (AllowPrivateAccess = true))
+	TObjectPtr<UMPAbilitySystemComponent> MPAbilitySystemComponent;
+
+	UPROPERTY(BlueprintReadOnly, meta = (AllowPrivateAccess = true))
+	TObjectPtr<UMPAttributeSet> MPAttributeSet;
+
+	void InitAbilityActorInfo();
+
 
 public:
 	/** Returns CameraBoom subobject **/

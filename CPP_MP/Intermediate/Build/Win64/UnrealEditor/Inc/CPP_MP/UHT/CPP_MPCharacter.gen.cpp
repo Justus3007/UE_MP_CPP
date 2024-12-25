@@ -12,6 +12,7 @@ void EmptyLinkFunctionForGeneratedCodeCPP_MPCharacter() {}
 // Begin Cross Module References
 CPP_MP_API UClass* Z_Construct_UClass_ACPP_MPCharacter();
 CPP_MP_API UClass* Z_Construct_UClass_ACPP_MPCharacter_NoRegister();
+CPP_MP_API UClass* Z_Construct_UClass_UMPAbilitySystemComponent_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_ACharacter();
 ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
@@ -105,6 +106,12 @@ struct Z_Construct_UClass_ACPP_MPCharacter_Statics
 		{ "ToolTip", "Look Input Action" },
 #endif
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MPAbilitySystemComponent_MetaData[] = {
+		{ "AllowPrivateAccess", "TRUE" },
+		{ "Category", "CPP_MPCharacter" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "CPP_MPCharacter.h" },
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_CameraBoom;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_FollowCamera;
@@ -112,6 +119,7 @@ struct Z_Construct_UClass_ACPP_MPCharacter_Statics
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_JumpAction;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_MoveAction;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_LookAction;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_MPAbilitySystemComponent;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -125,6 +133,7 @@ const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ACPP_MPCharact
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ACPP_MPCharacter_Statics::NewProp_JumpAction = { "JumpAction", nullptr, (EPropertyFlags)0x0040000000000015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ACPP_MPCharacter, JumpAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_JumpAction_MetaData), NewProp_JumpAction_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ACPP_MPCharacter_Statics::NewProp_MoveAction = { "MoveAction", nullptr, (EPropertyFlags)0x0040000000000015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ACPP_MPCharacter, MoveAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MoveAction_MetaData), NewProp_MoveAction_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ACPP_MPCharacter_Statics::NewProp_LookAction = { "LookAction", nullptr, (EPropertyFlags)0x0040000000000015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ACPP_MPCharacter, LookAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_LookAction_MetaData), NewProp_LookAction_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ACPP_MPCharacter_Statics::NewProp_MPAbilitySystemComponent = { "MPAbilitySystemComponent", nullptr, (EPropertyFlags)0x014400000008001c, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ACPP_MPCharacter, MPAbilitySystemComponent), Z_Construct_UClass_UMPAbilitySystemComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MPAbilitySystemComponent_MetaData), NewProp_MPAbilitySystemComponent_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ACPP_MPCharacter_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACPP_MPCharacter_Statics::NewProp_CameraBoom,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACPP_MPCharacter_Statics::NewProp_FollowCamera,
@@ -132,6 +141,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ACPP_MPCh
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACPP_MPCharacter_Statics::NewProp_JumpAction,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACPP_MPCharacter_Statics::NewProp_MoveAction,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACPP_MPCharacter_Statics::NewProp_LookAction,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACPP_MPCharacter_Statics::NewProp_MPAbilitySystemComponent,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ACPP_MPCharacter_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_ACPP_MPCharacter_Statics::DependentSingletons[])() = {
@@ -174,10 +184,10 @@ ACPP_MPCharacter::~ACPP_MPCharacter() {}
 struct Z_CompiledInDeferFile_FID_UE5Projects_UE_MP_CPP_CPP_MP_Source_CPP_MP_CPP_MPCharacter_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ACPP_MPCharacter, ACPP_MPCharacter::StaticClass, TEXT("ACPP_MPCharacter"), &Z_Registration_Info_UClass_ACPP_MPCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ACPP_MPCharacter), 1364026052U) },
+		{ Z_Construct_UClass_ACPP_MPCharacter, ACPP_MPCharacter::StaticClass, TEXT("ACPP_MPCharacter"), &Z_Registration_Info_UClass_ACPP_MPCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ACPP_MPCharacter), 1598762962U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UE5Projects_UE_MP_CPP_CPP_MP_Source_CPP_MP_CPP_MPCharacter_h_2815272592(TEXT("/Script/CPP_MP"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UE5Projects_UE_MP_CPP_CPP_MP_Source_CPP_MP_CPP_MPCharacter_h_3182632673(TEXT("/Script/CPP_MP"),
 	Z_CompiledInDeferFile_FID_UE5Projects_UE_MP_CPP_CPP_MP_Source_CPP_MP_CPP_MPCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_UE5Projects_UE_MP_CPP_CPP_MP_Source_CPP_MP_CPP_MPCharacter_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
