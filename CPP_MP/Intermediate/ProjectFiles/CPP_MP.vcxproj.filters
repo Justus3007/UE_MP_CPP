@@ -11,7 +11,6 @@
     <None Include="..\..\Source\CPP_MPEditor.Target.cs">
       <Filter>Source</Filter>
     </None>
-    <None Include="..\..\.vsconfig" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
     </Filter>
@@ -53,54 +52,6 @@
     </ClCompile>
     <ClInclude Include="..\..\Source\CPP_MP\CPP_MPGameMode.h">
       <Filter>Source\CPP_MP</Filter>
-    </ClInclude>
-    <Filter Include="Source\CPP_MP\Private">
-      <UniqueIdentifier>{BEC62BE8-ABFB-3A41-8AC9-0C86CC372575}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\CPP_MP\Private\AbilitySystem">
-      <UniqueIdentifier>{E924B590-8A1A-3378-A24A-39F66D5033AB}</UniqueIdentifier>
-    </Filter>
-    <ClCompile Include="..\..\Source\CPP_MP\Private\AbilitySystem\MPAbilitySystemComponent.cpp">
-      <Filter>Source\CPP_MP\Private\AbilitySystem</Filter>
-    </ClCompile>
-    <Filter Include="Source\CPP_MP\Private\AbilitySystem\Attributes">
-      <UniqueIdentifier>{46331F91-5A9A-3310-8A2A-313C33BECB93}</UniqueIdentifier>
-    </Filter>
-    <ClCompile Include="..\..\Source\CPP_MP\Private\AbilitySystem\Attributes\MPAttributeSet.cpp">
-      <Filter>Source\CPP_MP\Private\AbilitySystem\Attributes</Filter>
-    </ClCompile>
-    <Filter Include="Source\CPP_MP\Private\Game">
-      <UniqueIdentifier>{EDC188C5-E6F7-3104-AEFC-12783BD228CA}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\CPP_MP\Private\Game\PlayerState">
-      <UniqueIdentifier>{2C18E11F-F03D-31DB-9644-66D8ADE133AA}</UniqueIdentifier>
-    </Filter>
-    <ClCompile Include="..\..\Source\CPP_MP\Private\Game\PlayerState\MPPlayerState.cpp">
-      <Filter>Source\CPP_MP\Private\Game\PlayerState</Filter>
-    </ClCompile>
-    <Filter Include="Source\CPP_MP\Public">
-      <UniqueIdentifier>{37073DEE-D96B-3949-87F0-5CB2FFF0C7F0}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\CPP_MP\Public\AbilitySystem">
-      <UniqueIdentifier>{C4609B9C-EBF5-3395-ADA2-E094335AE819}</UniqueIdentifier>
-    </Filter>
-    <ClInclude Include="..\..\Source\CPP_MP\Public\AbilitySystem\MPAbilitySystemComponent.h">
-      <Filter>Source\CPP_MP\Public\AbilitySystem</Filter>
-    </ClInclude>
-    <Filter Include="Source\CPP_MP\Public\AbilitySystem\Attributes">
-      <UniqueIdentifier>{919C980D-76D3-350C-9BBA-2C994BEB3576}</UniqueIdentifier>
-    </Filter>
-    <ClInclude Include="..\..\Source\CPP_MP\Public\AbilitySystem\Attributes\MPAttributeSet.h">
-      <Filter>Source\CPP_MP\Public\AbilitySystem\Attributes</Filter>
-    </ClInclude>
-    <Filter Include="Source\CPP_MP\Public\Game">
-      <UniqueIdentifier>{9E7CDFD7-172A-3696-9FAF-4153715B51F2}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\CPP_MP\Public\Game\PlayerState">
-      <UniqueIdentifier>{4F33A11A-898B-3018-ADE2-6D6CBBC45D0F}</UniqueIdentifier>
-    </Filter>
-    <ClInclude Include="..\..\Source\CPP_MP\Public\Game\PlayerState\MPPlayerState.h">
-      <Filter>Source\CPP_MP\Public\Game\PlayerState</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
