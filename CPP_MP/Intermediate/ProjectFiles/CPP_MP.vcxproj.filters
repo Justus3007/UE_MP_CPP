@@ -41,17 +41,5 @@
     <ClInclude Include="..\..\Source\CPP_MP\CPP_MP.h">
       <Filter>Source\CPP_MP</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\CPP_MP\CPP_MPCharacter.cpp">
-      <Filter>Source\CPP_MP</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\CPP_MP\CPP_MPCharacter.h">
-      <Filter>Source\CPP_MP</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\CPP_MP\CPP_MPGameMode.cpp">
-      <Filter>Source\CPP_MP</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\CPP_MP\CPP_MPGameMode.h">
-      <Filter>Source\CPP_MP</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CPP_MPModuleRules")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Development")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2e022c98d3789cb9e032365e13f69de572c9e9e5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aa29657b601fc39f9ab953bef683f47a99798984")]
 [assembly: System.Reflection.AssemblyProductAttribute("CPP_MPModuleRules")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CPP_MPModuleRules")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
